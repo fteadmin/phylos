@@ -2,7 +2,15 @@
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        gold: {
+          DEFAULT: '#D4AF37',
+          600: '#B8860B',
+          800: '#8B6508'
+        }
+      }
+    },
   },
   plugins: [],
 };

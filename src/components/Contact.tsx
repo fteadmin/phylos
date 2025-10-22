@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
 
 const Contact = () => {
@@ -28,10 +28,10 @@ const Contact = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-black mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-gold mb-6">
             Start Your Journey
           </h2>
-          <div className="w-24 h-1 bg-black mx-auto mb-8"></div>
+          <div className="w-24 h-1 bg-gold mx-auto mb-8"></div>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Ready to discover the philosophy within your movement? Let's connect and begin your transformation.
           </p>
@@ -41,7 +41,7 @@ const Contact = () => {
           {/* Contact Information */}
           <div className="space-y-8">
             <div>
-              <h3 className="text-3xl font-bold text-black mb-6">Get in Touch</h3>
+              <h3 className="text-3xl font-bold text-gold mb-6">Get in Touch</h3>
               <p className="text-gray-600 text-lg leading-relaxed mb-8">
                 Whether you're an athlete looking to enhance performance, someone seeking wellness, or curious about the philosophy of movement, we're here to guide you.
               </p>
@@ -49,31 +49,31 @@ const Contact = () => {
 
             <div className="space-y-6">
               <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-black rounded-xl flex items-center justify-center">
+                <div className="w-12 h-12 bg-gold rounded-xl flex items-center justify-center">
                   <Mail className="text-white" size={20} />
                 </div>
                 <div>
-                  <p className="font-semibold text-black">Email</p>
+                  <p className="font-semibold text-gold">Email</p>
                   <p className="text-gray-600">hello@phylos.com</p>
                 </div>
               </div>
 
               <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-black rounded-xl flex items-center justify-center">
+                <div className="w-12 h-12 bg-gold rounded-xl flex items-center justify-center">
                   <Phone className="text-white" size={20} />
                 </div>
                 <div>
-                  <p className="font-semibold text-black">Phone</p>
+                  <p className="font-semibold text-gold">Phone</p>
                   <p className="text-gray-600">+1 (555) 123-4567</p>
                 </div>
               </div>
 
               <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-black rounded-xl flex items-center justify-center">
+                <div className="w-12 h-12 bg-gold rounded-xl flex items-center justify-center">
                   <MapPin className="text-white" size={20} />
                 </div>
                 <div>
-                  <p className="font-semibold text-black">Location</p>
+                  <p className="font-semibold text-gold">Location</p>
                   <p className="text-gray-600">Available Worldwide</p>
                 </div>
               </div>
@@ -84,21 +84,21 @@ const Contact = () => {
               <h4 className="text-xl font-bold text-black mb-4">Why It's Memorable</h4>
               <ul className="space-y-3">
                 <li className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
+                    <div className="w-2 h-2 bg-gold rounded-full mt-2 flex-shrink-0"></div>
                   <div>
                     <span className="font-semibold text-black">Thought-Provoking:</span>
                     <span className="text-gray-700 ml-1">Sparks curiosity about the philosophy within movement</span>
                   </div>
                 </li>
                 <li className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
+                  <div className="w-2 h-2 bg-gold rounded-full mt-2 flex-shrink-0"></div>
                   <div>
                     <span className="font-semibold text-black">Unique Positioning:</span>
                     <span className="text-gray-700 ml-1">Stands apart from typical fitness or wellness platforms</span>
                   </div>
                 </li>
                 <li className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
+                  <div className="w-2 h-2 bg-gold rounded-full mt-2 flex-shrink-0"></div>
                   <div>
                     <span className="font-semibold text-black">Invitational:</span>
                     <span className="text-gray-700 ml-1">Encourages personal discovery and exploration</span>
@@ -112,7 +112,7 @@ const Contact = () => {
           <div className="bg-gray-50 p-8 rounded-3xl">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-semibold text-black mb-2">
+                <label htmlFor="name" className="block text-sm font-semibold text-gold mb-2">
                   Name
                 </label>
                 <input
@@ -128,7 +128,7 @@ const Contact = () => {
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-sm font-semibold text-black mb-2">
+                <label htmlFor="email" className="block text-sm font-semibold text-gold mb-2">
                   Email
                 </label>
                 <input
@@ -144,7 +144,7 @@ const Contact = () => {
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-semibold text-black mb-2">
+                <label htmlFor="message" className="block text-sm font-semibold text-gold mb-2">
                   Message
                 </label>
                 <textarea
@@ -161,7 +161,7 @@ const Contact = () => {
 
               <button
                 type="submit"
-                className="w-full bg-black text-white py-4 rounded-xl hover:bg-gray-800 transition-all duration-300 flex items-center justify-center space-x-2 group font-semibold"
+                className="w-full bg-gold text-white py-4 rounded-xl hover:bg-gold-600 transition-all duration-300 flex items-center justify-center space-x-2 group font-semibold"
               >
                 <span>Send Message</span>
                 <Send size={18} className="group-hover:translate-x-1 transition-transform duration-200" />

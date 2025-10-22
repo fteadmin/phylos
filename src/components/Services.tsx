@@ -1,4 +1,4 @@
-import React from 'react';
+// JSX runtime handles React imports automatically
 import { Trophy, Leaf, Sparkles, Lightbulb } from 'lucide-react';
 
 const Services = () => {
@@ -34,10 +34,10 @@ const Services = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-black mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-gold mb-6">
             Core Benefits
           </h2>
-          <div className="w-24 h-1 bg-black mx-auto mb-8"></div>
+          <div className="w-24 h-1 bg-gold mx-auto mb-8"></div>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Experience transformation through our comprehensive approach to movement and philosophy.
           </p>
@@ -51,17 +51,17 @@ const Services = () => {
               className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 group"
             >
               <div className="flex items-start space-x-4">
-                <div className="w-14 h-14 bg-black rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 flex-shrink-0">
+                <div className="w-14 h-14 bg-gold rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 flex-shrink-0">
                   <service.icon className="text-white" size={24} />
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-2xl font-bold text-black mb-3">{service.title}</h3>
+                  <h3 className="text-2xl font-bold text-gold mb-3">{service.title}</h3>
                   <p className="text-gray-600 leading-relaxed mb-4">{service.description}</p>
                   
                   <ul className="space-y-2">
                     {service.features.map((feature, featureIndex) => (
                       <li key={featureIndex} className="flex items-center text-gray-700">
-                        <div className="w-1.5 h-1.5 bg-black rounded-full mr-3"></div>
+                        <div className="w-1.5 h-1.5 bg-gold rounded-full mr-3"></div>
                         {feature}
                       </li>
                     ))}
@@ -73,7 +73,7 @@ const Services = () => {
         </div>
 
         {/* Action-Oriented Approach */}
-        <div className="bg-black text-white p-12 rounded-3xl">
+        <div className="bg-gold-800 text-white p-12 rounded-3xl">
           <div className="text-center mb-12">
             <h3 className="text-3xl font-bold mb-4">Action-Oriented Approach</h3>
             <p className="text-gray-300 text-lg leading-relaxed max-w-2xl mx-auto">

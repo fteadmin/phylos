@@ -1,4 +1,4 @@
-import React from 'react';
+// JSX runtime handles React imports automatically
 import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
