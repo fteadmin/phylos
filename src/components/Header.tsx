@@ -33,43 +33,43 @@ const Header = () => {
           <nav className="hidden md:flex space-x-6 mr-8">
             <button
               onClick={() => scrollToSection('home')}
-              className="text-white rounded-none px-3 py-2 hover:opacity-90 transition-colors duration-200 font-medium text-sm"
+              className="text-gray-800 rounded-none px-3 py-2 hover:opacity-70 transition-colors duration-200 font-medium text-sm"
             >
               Home
             </button>
             <button
               onClick={() => scrollToSection('vision')}
-              className="text-white rounded-none px-3 py-2 hover:opacity-90 transition-colors duration-200 font-medium text-sm"
+              className="text-gray-800 rounded-none px-3 py-2 hover:opacity-70 transition-colors duration-200 font-medium text-sm"
             >
               About
             </button>
             <button
               onClick={() => scrollToSection('membership')}
-              className="text-white rounded-none px-3 py-2 hover:opacity-90 transition-colors duration-200 font-medium text-sm"
+              className="text-gray-800 rounded-none px-3 py-2 hover:opacity-70 transition-colors duration-200 font-medium text-sm"
             >
               Membership
             </button>
             <button
               onClick={() => scrollToSection('events')}
-              className="text-white rounded-none px-3 py-2 hover:opacity-90 transition-colors duration-200 font-medium text-sm"
+              className="text-gray-800 rounded-none px-3 py-2 hover:opacity-70 transition-colors duration-200 font-medium text-sm"
             >
               Events
             </button>
             <button
               onClick={() => scrollToSection('clubs')}
-              className="text-white rounded-none px-3 py-2 hover:opacity-90 transition-colors duration-200 font-medium text-sm"
+              className="text-gray-800 rounded-none px-3 py-2 hover:opacity-70 transition-colors duration-200 font-medium text-sm"
             >
               Clubs
             </button>
             <button
               onClick={() => scrollToSection('services')}
-              className="text-white rounded-none px-3 py-2 hover:opacity-90 transition-colors duration-200 font-medium text-sm"
+              className="text-gray-800 rounded-none px-3 py-2 hover:opacity-70 transition-colors duration-200 font-medium text-sm"
             >
               Services
             </button>
             <button
               onClick={() => scrollToSection('contact')}
-              className="text-white rounded-none px-3 py-2 hover:opacity-90 transition-colors duration-200 font-medium text-sm"
+              className="text-gray-800 rounded-none px-3 py-2 hover:opacity-70 transition-colors duration-200 font-medium text-sm"
             >
               Contact
             </button>
@@ -92,43 +92,43 @@ const Header = () => {
             <div className="px-2 pt-2 pb-3 space-y-1">
               <button
                 onClick={() => scrollToSection('home')}
-                className="block px-3 py-2 text-white hover:opacity-90 transition-colors duration-200 font-medium w-full text-left rounded-none text-sm"
+                className="block px-3 py-2 text-gray-800 hover:opacity-70 transition-colors duration-200 font-medium w-full text-left rounded-none text-sm"
               >
                 Home
               </button>
               <button
                 onClick={() => scrollToSection('vision')}
-                className="block px-3 py-2 text-white hover:opacity-90 transition-colors duration-200 font-medium w-full text-left rounded-none text-sm"
+                className="block px-3 py-2 text-gray-800 hover:opacity-70 transition-colors duration-200 font-medium w-full text-left rounded-none text-sm"
               >
                 About
               </button>
               <button
                 onClick={() => scrollToSection('membership')}
-                className="block px-3 py-2 text-white hover:opacity-90 transition-colors duration-200 font-medium w-full text-left rounded-none text-sm"
+                className="block px-3 py-2 text-gray-800 hover:opacity-70 transition-colors duration-200 font-medium w-full text-left rounded-none text-sm"
               >
                 Membership
               </button>
               <button
                 onClick={() => scrollToSection('events')}
-                className="block px-3 py-2 text-white hover:opacity-90 transition-colors duration-200 font-medium w-full text-left rounded-none text-sm"
+                className="block px-3 py-2 text-gray-800 hover:opacity-70 transition-colors duration-200 font-medium w-full text-left rounded-none text-sm"
               >
                 Events
               </button>
               <button
                 onClick={() => scrollToSection('clubs')}
-                className="block px-3 py-2 text-white hover:opacity-90 transition-colors duration-200 font-medium w-full text-left rounded-none text-sm"
+                className="block px-3 py-2 text-gray-800 hover:opacity-70 transition-colors duration-200 font-medium w-full text-left rounded-none text-sm"
               >
                 Clubs
               </button>
               <button
                 onClick={() => scrollToSection('services')}
-                className="block px-3 py-2 text-white hover:opacity-90 transition-colors duration-200 font-medium w-full text-left rounded-none text-sm"
+                className="block px-3 py-2 text-gray-800 hover:opacity-70 transition-colors duration-200 font-medium w-full text-left rounded-none text-sm"
               >
                 Services
               </button>
               <button
                 onClick={() => scrollToSection('contact')}
-                className="block px-3 py-2 text-white hover:opacity-90 transition-colors duration-200 font-medium w-full text-left rounded-none text-sm"
+                className="block px-3 py-2 text-gray-800 hover:opacity-70 transition-colors duration-200 font-medium w-full text-left rounded-none text-sm"
               >
                 Contact
               </button>
