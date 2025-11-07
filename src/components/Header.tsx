@@ -23,7 +23,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center flex-1">
             <img 
-              src="/phylos.png" 
+              src="/ph.png" 
               alt="Phylos Logo" 
               className="h-12 w-auto"
             />
