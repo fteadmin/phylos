@@ -79,33 +79,7 @@ const Contact = () => {
               </div>
             </div>
 
-            {/* Why Choose Us */}
-            <div className="bg-gray-50 p-8 rounded-2xl">
-              <h4 className="text-xl font-bold text-black mb-4">Why It's Memorable</h4>
-              <ul className="space-y-3">
-                <li className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-gold rounded-full mt-2 flex-shrink-0"></div>
-                  <div>
-                    <span className="font-semibold text-black">Thought-Provoking:</span>
-                    <span className="text-gray-700 ml-1">Sparks curiosity about the philosophy within movement</span>
-                  </div>
-                </li>
-                <li className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-gold rounded-full mt-2 flex-shrink-0"></div>
-                  <div>
-                    <span className="font-semibold text-black">Unique Positioning:</span>
-                    <span className="text-gray-700 ml-1">Stands apart from typical fitness or wellness platforms</span>
-                  </div>
-                </li>
-                <li className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-gold rounded-full mt-2 flex-shrink-0"></div>
-                  <div>
-                    <span className="font-semibold text-black">Invitational:</span>
-                    <span className="text-gray-700 ml-1">Encourages personal discovery and exploration</span>
-                  </div>
-                </li>
-              </ul>
-            </div>
+          
           </div>
 
           {/* Contact Form */}

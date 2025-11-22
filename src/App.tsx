@@ -18,11 +18,13 @@ function HomePage() {
       <Header />
       <Hero />
       <VisionMission />
-      <About />
-      <Membership />
+      {/* <About /> */}
       {/* <Events /> */}
       {/* <Clubs /> */}
+   
+      <Membership />
       <Services />
+
       <Contact />
       <Footer />
     </div>

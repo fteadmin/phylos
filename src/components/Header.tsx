@@ -49,24 +49,27 @@ const Header = () => {
             >
               Membership
             </button>
-            <button
-              onClick={() => scrollToSection('events')}
-              className="text-gray-800 rounded-none px-3 py-2 hover:opacity-70 transition-colors duration-200 font-medium text-sm"
-            >
-              Events
-            </button>
-            <button
-              onClick={() => scrollToSection('clubs')}
-              className="text-gray-800 rounded-none px-3 py-2 hover:opacity-70 transition-colors duration-200 font-medium text-sm"
-            >
-              Clubs
-            </button>
-            <button
+
+             <button
               onClick={() => scrollToSection('services')}
               className="text-gray-800 rounded-none px-3 py-2 hover:opacity-70 transition-colors duration-200 font-medium text-sm"
             >
               Services
             </button>
+
+            {/* <button
+              onClick={() => scrollToSection('events')}
+              className="text-gray-800 rounded-none px-3 py-2 hover:opacity-70 transition-colors duration-200 font-medium text-sm"
+            >
+              Events
+            </button> */}
+            {/* <button
+              onClick={() => scrollToSection('clubs')}
+              className="text-gray-800 rounded-none px-3 py-2 hover:opacity-70 transition-colors duration-200 font-medium text-sm"
+            >
+              Clubs
+            </button> */}
+           
             <button
               onClick={() => scrollToSection('contact')}
               className="text-gray-800 rounded-none px-3 py-2 hover:opacity-70 transition-colors duration-200 font-medium text-sm"
