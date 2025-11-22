@@ -9,32 +9,48 @@ const VisionMission = () => {
           <div className="w-24 h-1 bg-gold mx-auto"></div>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12">
-          {/* Vision */}
-          <div className="bg-gradient-to-br from-gold/5 to-transparent p-8 rounded-lg border border-gold/20">
-            <div className="flex items-center mb-6">
-              <Lightbulb size={40} className="text-gold mr-4" />
-              <h3 className="text-3xl font-bold text-gold">Our Vision</h3>
+        {/* Vision Section */}
+        <div className="mb-20">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="rounded-lg overflow-hidden h-96 bg-cover bg-center"
+              style={{
+                backgroundImage: 'url(https://images.pexels.com/photos/841131/pexels-photo-841131.jpeg)',
+              }}>
             </div>
-            <p className="text-lg text-gray-700 leading-relaxed">
-              To create a global community where physical movement is understood as a profound expression of philosophy, connecting the mind, body, and spirit through intentional practice and deeper awareness.
-            </p>
+            <div>
+              <div className="flex items-center mb-6">
+                <Lightbulb size={48} className="text-gold mr-4" />
+                <h3 className="text-4xl font-bold text-gold">Our Vision</h3>
+              </div>
+              <p className="text-xl text-gray-700 leading-relaxed">
+                To create a global community where physical movement is understood as a profound expression of philosophy, connecting the mind, body, and spirit through intentional practice and deeper awareness.
+              </p>
+            </div>
           </div>
+        </div>
 
-          {/* Mission */}
-          <div className="bg-gradient-to-br from-gold/5 to-transparent p-8 rounded-lg border border-gold/20">
-            <div className="flex items-center mb-6">
-              <Target size={40} className="text-gold mr-4" />
-              <h3 className="text-3xl font-bold text-gold">Our Mission</h3>
+        {/* Mission Section */}
+        <div className="mb-16">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <div className="flex items-center mb-6">
+                <Target size={48} className="text-gold mr-4" />
+                <h3 className="text-4xl font-bold text-gold">Our Mission</h3>
+              </div>
+              <p className="text-xl text-gray-700 leading-relaxed">
+                To empower individuals through accessible platforms, expert guidance, and vibrant communities that unlock the transformative power of movement—bridging athletics, wellness, and beauty through philosophical wisdom.
+              </p>
             </div>
-            <p className="text-lg text-gray-700 leading-relaxed">
-              To empower individuals through accessible platforms, expert guidance, and vibrant communities that unlock the transformative power of movement—bridging athletics, wellness, and beauty through philosophical wisdom.
-            </p>
+            <div className="rounded-lg overflow-hidden h-96 bg-cover bg-center"
+              style={{
+                backgroundImage: 'url(https://images.pexels.com/photos/878151/pexels-photo-878151.jpeg)',
+              }}>
+            </div>
           </div>
         </div>
 
         {/* Core Values */}
-        <div className="mt-16">
+        {/* <div className="mt-16">
           <h3 className="text-3xl font-bold text-center text-gold mb-12">Our Core Values</h3>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
@@ -61,7 +77,7 @@ const VisionMission = () => {
               <p className="text-gray-600">Stronger together—we celebrate collective growth and shared wisdom.</p>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

@@ -1,130 +1,66 @@
 import { Check } from 'lucide-react';
 
 const Membership = () => {
-  const tiers = [
-    {
-      name: 'Starter',
-      price: '$9.99',
-      period: '/month',
-      description: 'Perfect for exploring your philosophy',
-      features: [
-        'Access to basic movement guides',
-        'Monthly community events',
-        'Email support',
-        'Exclusive newsletter',
-      ],
-      cta: 'Get Started',
-      highlighted: false,
-    },
-    {
-      name: 'Premium',
-      price: '$29.99',
-      period: '/month',
-      description: 'For dedicated practitioners',
-      features: [
-        'All Starter features',
-        'Personalized coaching sessions',
-        'Priority support',
-        'Advanced video library',
-        'Club membership included',
-        'Early access to events',
-      ],
-      cta: 'Choose Premium',
-      highlighted: true,
-    },
-    {
-      name: 'Elite',
-      price: '$59.99',
-      period: '/month',
-      description: 'For movement masters',
-      features: [
-        'All Premium features',
-        'VIP event access',
-        'Monthly 1-on-1 sessions',
-        'Exclusive workshops',
-        'Networking opportunities',
-        'Custom training programs',
-      ],
-      cta: 'Become Elite',
-      highlighted: false,
-    },
-  ];
-
   return (
     <section id="membership" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-5xl md:text-6xl font-bold text-gold mb-6">Membership Plans</h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Choose the perfect membership to unlock your philosophy journey
-          </p>
+        <div className="text-center mb-20">
+          <h2 className="text-5xl md:text-6xl font-bold text-gold mb-6">Membership</h2>
           <div className="w-24 h-1 bg-gold mx-auto mt-6"></div>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 items-center">
-          {tiers.map((tier) => (
-            <div
-              key={tier.name}
-              className={`rounded-xl transition-all duration-300 ${
-                tier.highlighted
-                  ? 'bg-gold text-white shadow-2xl scale-105 border-2 border-gold'
-                  : 'bg-white border-2 border-gold/20 text-gray-900'
-              }`}
-            >
-              <div className="p-8">
-                <h3 className={`text-2xl font-bold mb-2 ${tier.highlighted ? 'text-white' : 'text-gold'}`}>
-                  {tier.name}
-                </h3>
-                <p className={`text-sm mb-4 ${tier.highlighted ? 'text-gold-100' : 'text-gray-600'}`}>
-                  {tier.description}
-                </p>
-
-                <div className="mb-6">
-                  <span className="text-4xl font-bold">{tier.price}</span>
-                  <span className={tier.highlighted ? 'text-gold-100' : 'text-gray-600'}>{tier.period}</span>
-                </div>
-
-                <button
-                  className={`w-full py-3 rounded-lg font-bold mb-8 transition-all duration-200 ${
-                    tier.highlighted
-                      ? 'bg-white text-gold hover:bg-gray-100'
-                      : 'bg-gold text-white hover:bg-gold-700'
-                  }`}
-                >
-                  {tier.cta}
-                </button>
-
-                <ul className="space-y-4">
-                  {tier.features.map((feature) => (
-                    <li key={feature} className="flex items-start">
-                      <Check size={20} className={`mr-3 flex-shrink-0 ${tier.highlighted ? 'text-white' : 'text-gold'}`} />
-                      <span>{feature}</span>
-                    </li>
-                  ))}
-                </ul>
+        {/* All Membership Cards */}
+        <div>
+          
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* General Membership Card */}
+            <div className="bg-white border-2 border-gold rounded-xl p-10 shadow-lg hover:shadow-xl transition-all duration-300">
+              <h4 className="text-2xl font-bold text-gold mb-4">General Membership</h4>
+              <div className="mb-6">
+                <p className="text-4xl font-bold text-gold mb-2">$20</p>
+                <p className="text-gray-600">Annual membership</p>
               </div>
+              <ul className="space-y-3 mb-8">
+                <li className="flex items-start">
+                  <Check size={20} className="text-gold mr-3 flex-shrink-0 mt-1" />
+                  <span className="text-gray-700">Access to all Phylos activities</span>
+                </li>
+                <li className="flex items-start">
+                  <Check size={20} className="text-gold mr-3 flex-shrink-0 mt-1" />
+                  <span className="text-gray-700">Discount price to events</span>
+                </li>
+              </ul>
+              <button className="w-full bg-gold text-white py-3 rounded-lg font-bold hover:bg-gold-700 transition-all duration-200">
+                Join Now
+              </button>
             </div>
-          ))}
-        </div>
 
-        <div className="mt-16 bg-gold/10 rounded-lg p-8 border border-gold/20">
-          <h3 className="text-2xl font-bold text-gold mb-4">Why choose us?</h3>
-          <div className="grid md:grid-cols-2 gap-6 text-gray-700">
-            <div className="flex items-start">
-              <Check size={24} className="text-gold mr-4 flex-shrink-0 mt-1" />
-              <p>Flexible plans that scale with your journey</p>
+            {/* Health and Wellness Influencer */}
+            <div className="bg-white border-2 border-gold rounded-xl p-10 shadow-lg hover:shadow-xl transition-all duration-300 relative">
+              <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                <span className="bg-gold text-white px-4 py-2 rounded-full text-sm font-bold">Business Partner</span>
+              </div>
+              <h4 className="text-2xl font-bold text-gold mb-4 mt-4">Health and Wellness Influencer</h4>
+              <p className="text-gray-600 mb-8 leading-relaxed">
+                Starter package for those who want to start their health and wellness business. Branding and establishing of a business and business co.
+              </p>
+              <button className="w-full bg-gold text-white py-3 rounded-lg font-bold hover:bg-gold-700 transition-all duration-200">
+                Learn More
+              </button>
             </div>
-            <div className="flex items-start">
-              <Check size={24} className="text-gold mr-4 flex-shrink-0 mt-1" />
-              <p>Cancel anytime, no long-term commitment</p>
-            </div>
-            <div className="flex items-start">
-              <Check size={24} className="text-gold mr-4 flex-shrink-0 mt-1" />
-              <p>Expert coaches and community support</p>
-            </div>
-            <div className="flex items-start">
-              <Check size={24} className="text-gold mr-4 flex-shrink-0 mt-1" />
-              <p>Continuous updates and new content</p>
+
+            {/* Global Ambassador */}
+            <div className="bg-white border-2 border-gold rounded-xl p-10 shadow-lg hover:shadow-xl transition-all duration-300 relative">
+              <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                <span className="bg-gold text-white px-4 py-2 rounded-full text-sm font-bold">Business Partner</span>
+              </div>
+              <h4 className="text-2xl font-bold text-gold mb-4 mt-4">Global Ambassador</h4>
+              <p className="text-gray-600 mb-8 leading-relaxed">
+                Having multiple brand partnerships, multi layer global level of health and wellness businesses.
+              </p>
+              <button className="w-full bg-gold text-white py-3 rounded-lg font-bold hover:bg-gold-700 transition-all duration-200">
+                Learn More
+              </button>
             </div>
           </div>
         </div>

@@ -4,7 +4,7 @@ import Hero from './components/Hero';
 import VisionMission from './components/VisionMission';
 import About from './components/About';
 import RunClub from './components/RunClub';
-// import Membership from './components/Membership';
+import Membership from './components/Membership';
 // import Events from './components/Events';
 // import Clubs from './components/Clubs';
 import Services from './components/Services';
@@ -19,7 +19,7 @@ function HomePage() {
       <Hero />
       <VisionMission />
       <About />
-      {/* <Membership /> */}
+      <Membership />
       {/* <Events /> */}
       {/* <Clubs /> */}
       <Services />
