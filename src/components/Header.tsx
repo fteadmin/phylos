@@ -30,11 +30,13 @@ const Header = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center flex-1">
-            <img 
-              src="/ph.png" 
-              alt="Phylos Logo" 
-              className="h-12 w-auto"
-            />
+            <Link to="/">
+              <img 
+                src="/ph.png" 
+                alt="Phylos Logo" 
+                className="h-12 w-auto cursor-pointer hover:opacity-80 transition-opacity duration-200"
+              />
+            </Link>
           </div>
 
           {/* Desktop Navigation */}

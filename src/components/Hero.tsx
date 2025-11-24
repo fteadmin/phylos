@@ -70,8 +70,14 @@ const Hero = () => {
           loop
           playsInline
           poster={slide.fallbackImg}
+          onLoadStart={(e) => e.currentTarget.style.display = 'block'}
         >
           <source src={slide.videoSrc} type="video/mp4" />
+          <img
+            src={slide.fallbackImg}
+            alt={slide.title}
+            className="absolute inset-0 w-full h-full object-cover"
+          />
         </video>
       ) : (
         <img
