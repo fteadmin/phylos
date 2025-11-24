@@ -1,19 +1,27 @@
 import { useState } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, ChevronDown } from 'lucide-react';
+import { Link, useLocation } from 'react-router-dom';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
   const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+    if (location.pathname !== '/') {
+      // If not on home page, navigate to home first
+      window.location.href = `/#${sectionId}`;
+    } else {
+      // If on home page, scroll to section
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+      setIsMenuOpen(false);
     }
-    setIsMenuOpen(false);
   };
 
   return (
@@ -31,12 +39,12 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-6 mr-8">
-            <button
-              onClick={() => scrollToSection('home')}
+            <Link
+              to="/"
               className="text-gray-800 rounded-none px-3 py-2 hover:opacity-70 transition-colors duration-200 font-medium text-sm"
             >
               Home
-            </button>
+            </Link>
             <button
               onClick={() => scrollToSection('vision')}
               className="text-gray-800 rounded-none px-3 py-2 hover:opacity-70 transition-colors duration-200 font-medium text-sm"
@@ -63,12 +71,22 @@ const Header = () => {
             >
               Events
             </button> */}
-            {/* <button
-              onClick={() => scrollToSection('clubs')}
-              className="text-gray-800 rounded-none px-3 py-2 hover:opacity-70 transition-colors duration-200 font-medium text-sm"
-            >
-              Clubs
-            </button> */}
+            <div className="relative group">
+              <button
+                className="text-gray-800 rounded-none px-3 py-2 hover:opacity-70 transition-colors duration-200 font-medium text-sm flex items-center"
+              >
+                Clubs
+                <ChevronDown size={16} className="ml-1" />
+              </button>
+              <div className="absolute left-0 mt-0 w-48 bg-[#EDC531] border border-gold-700 shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-10">
+                <Link
+                  to="/runclub"
+                  className="block px-4 py-3 text-gray-800 hover:opacity-70 transition-colors duration-200 font-medium text-sm"
+                >
+                  Run Club
+                </Link>
+              </div>
+            </div>
            
             <button
               onClick={() => scrollToSection('contact')}
@@ -93,12 +111,12 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden bg-gold-800">
             <div className="px-2 pt-2 pb-3 space-y-1">
-              <button
-                onClick={() => scrollToSection('home')}
+              <Link
+                to="/"
                 className="block px-3 py-2 text-gray-800 hover:opacity-70 transition-colors duration-200 font-medium w-full text-left rounded-none text-sm"
               >
                 Home
-              </button>
+              </Link>
               <button
                 onClick={() => scrollToSection('vision')}
                 className="block px-3 py-2 text-gray-800 hover:opacity-70 transition-colors duration-200 font-medium w-full text-left rounded-none text-sm"
@@ -112,22 +130,19 @@ const Header = () => {
                 Membership
               </button>
               <button
-                onClick={() => scrollToSection('events')}
-                className="block px-3 py-2 text-gray-800 hover:opacity-70 transition-colors duration-200 font-medium w-full text-left rounded-none text-sm"
-              >
-                Events
-              </button>
-              <button
-                onClick={() => scrollToSection('clubs')}
-                className="block px-3 py-2 text-gray-800 hover:opacity-70 transition-colors duration-200 font-medium w-full text-left rounded-none text-sm"
-              >
-                Clubs
-              </button>
-              <button
                 onClick={() => scrollToSection('services')}
                 className="block px-3 py-2 text-gray-800 hover:opacity-70 transition-colors duration-200 font-medium w-full text-left rounded-none text-sm"
               >
                 Services
+              </button>
+              <button
+                onClick={() => {
+                  setIsMenuOpen(false);
+                  window.location.href = '/runclub';
+                }}
+                className="block px-3 py-2 text-gray-800 hover:opacity-70 transition-colors duration-200 font-medium w-full text-left rounded-none text-sm"
+              >
+                Run Club
               </button>
               <button
                 onClick={() => scrollToSection('contact')}
