@@ -1,5 +1,5 @@
 // JSX runtime handles React imports automatically
-import { Briefcase, Users, Dumbbell } from 'lucide-react';
+import { Briefcase, Users, ExternalLink } from 'lucide-react';
 
 const Services = () => {
   return (
@@ -55,14 +55,48 @@ const Services = () => {
             <h3 className="text-3xl font-bold text-gold">Brand Partnership Services</h3>
           </div>
 
-          <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300">
-            <div className="w-12 h-12 bg-gold rounded-lg flex items-center justify-center mb-6">
-              <Dumbbell className="text-white" size={24} />
-            </div>
-            <h4 className="text-2xl font-bold text-gold mb-4">Fitness Trainer</h4>
-            <p className="text-gray-700 leading-relaxed">
-              Professional fitness training services delivered by our network of certified trainers and wellness experts.
-            </p>
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Good Chef Co */}
+            <a 
+              href="https://goodchefco.com/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 cursor-pointer group"
+            >
+              <img 
+                src="/goodchef.png" 
+                alt="Good Chef Co Logo" 
+                className="h-16 w-auto mb-6 group-hover:opacity-80 transition-opacity"
+              />
+              <h4 className="text-2xl font-bold text-gold mb-4 flex items-center">
+                Good Chef Co
+                <ExternalLink size={20} className="ml-2" />
+              </h4>
+              <p className="text-gray-700 leading-relaxed">
+                Meal prep and nutrition services designed to support your wellness journey with healthy, delicious options.
+              </p>
+            </a>
+
+            {/* Zariel & Co */}
+            <a 
+              href="https://www.zaniyazariel.com/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 cursor-pointer group"
+            >
+              <img 
+                src="/z.jpg" 
+                alt="Zariel & Co Logo" 
+                className="h-16 w-auto mb-6 group-hover:opacity-80 transition-opacity"
+              />
+              <h4 className="text-2xl font-bold text-gold mb-4 flex items-center">
+                Zariel & Co
+                <ExternalLink size={20} className="ml-2" />
+              </h4>
+              <p className="text-gray-700 leading-relaxed">
+                Professional media content creation and production services to elevate your brand presence.
+              </p>
+            </a>
           </div>
         </div>
       </div>

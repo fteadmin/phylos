@@ -1,4 +1,4 @@
-import { Lightbulb, Target } from 'lucide-react';
+import { Lightbulb } from 'lucide-react';
 
 const VisionMission = () => {
   return (
@@ -9,37 +9,28 @@ const VisionMission = () => {
           <div className="w-24 h-1 bg-gold mx-auto"></div>
         </div>
 
-        {/* Vision Section */}
+        {/* Vision & Mission Section */}
         <div className="mb-20">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="rounded-lg overflow-hidden h-96 bg-cover bg-center"
-              style={{
-                backgroundImage: 'url(https://images.pexels.com/photos/841131/pexels-photo-841131.jpeg)',
-              }}>
-            </div>
             <div>
               <div className="flex items-center mb-6">
                 <Lightbulb size={48} className="text-gold mr-4" />
-                <h3 className="text-4xl font-bold text-gold">Our Vision</h3>
+                <h3 className="text-4xl font-bold text-gold">Our Vision & Mission</h3>
               </div>
-              <p className="text-xl text-gray-700 leading-relaxed">
-                To create a global community where physical movement is understood as a profound expression of philosophy, connecting the mind, body, and spirit through intentional practice and deeper awareness.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* Mission Section */}
-        <div className="mb-16">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <div className="flex items-center mb-6">
-                <Target size={48} className="text-gold mr-4" />
-                <h3 className="text-4xl font-bold text-gold">Our Mission</h3>
+              <div className="space-y-6">
+                <div>
+                  <h4 className="text-2xl font-bold text-gold mb-3">Vision</h4>
+                  <p className="text-lg text-gray-700 leading-relaxed">
+                    To create a global community where physical movement is understood as a profound expression of philosophy, connecting the mind, body, and spirit through intentional practice and deeper awareness.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="text-2xl font-bold text-gold mb-3">Mission</h4>
+                  <p className="text-lg text-gray-700 leading-relaxed">
+                    To empower individuals through accessible platforms, expert guidance, and vibrant communities that unlock the transformative power of movement—bridging athletics, wellness, and beauty through philosophical wisdom.
+                  </p>
+                </div>
               </div>
-              <p className="text-xl text-gray-700 leading-relaxed">
-                To empower individuals through accessible platforms, expert guidance, and vibrant communities that unlock the transformative power of movement—bridging athletics, wellness, and beauty through philosophical wisdom.
-              </p>
             </div>
             <div className="rounded-lg overflow-hidden h-96 bg-cover bg-center"
               style={{

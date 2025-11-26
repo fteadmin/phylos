@@ -71,8 +71,16 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4 text-gray-800">Connect</h4>
             <ul className="space-y-2 text-gray-800">
-              <li>hello@phylos.com</li>
-              <li>+1 (555) 123-4567</li>
+              <li>
+                <a href="mailto:contact@phylos.fit" className="hover:text-white transition-colors">
+                  contact@phylos.fit
+                </a>
+              </li>
+              <li>
+                <a href="tel:213-397-8908" className="hover:text-white transition-colors">
+                  213-397-8908
+                </a>
+              </li>
               <li>Available Worldwide</li>
             </ul>
           </div>

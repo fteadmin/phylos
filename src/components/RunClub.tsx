@@ -39,7 +39,7 @@ const RunClub = () => {
                   </div>
                   <div>
                     <p className="text-sm font-semibold text-gold uppercase tracking-wider mb-3">Distance</p>
-                    <p className="text-gray-700 leading-relaxed">3-8 miles based on ability</p>
+                    <p className="text-gray-700 leading-relaxed">Varies based on ability</p>
                   </div>
                   <div>
                     <p className="text-sm font-semibold text-gold uppercase tracking-wider mb-3">Cool-Down</p>
